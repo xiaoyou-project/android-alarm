@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "个人闹钟"
