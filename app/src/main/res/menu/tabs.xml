@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/alarm"
+        android:title="主页" />
+    <item
+        android:id="@+id/tab_alarm"
+        android:icon="@drawable/alarm"
+        android:title="番茄钟" />
+    <item
+        android:id="@+id/tab_bread"
+        android:icon="@drawable/alarm"
+        android:title="图表" />
+    <item
+        android:id="@+id/tab_cart"
+        android:icon="@drawable/alarm"
+        android:title="我的" />
+</menu>
