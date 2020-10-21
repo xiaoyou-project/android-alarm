@@ -1,18 +1,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/tab_home"
-        android:icon="@drawable/alarm"
-        android:title="主页" />
+        android:icon="@drawable/ic_baseline_school_24"
+        android:title="@string/app_study" />
     <item
         android:id="@+id/tab_alarm"
-        android:icon="@drawable/alarm"
-        android:title="番茄钟" />
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="@string/app_list" />
     <item
         android:id="@+id/tab_bread"
         android:icon="@drawable/alarm"
-        android:title="图表" />
+        android:title="@string/app_alarm" />
     <item
         android:id="@+id/tab_cart"
-        android:icon="@drawable/alarm"
-        android:title="我的" />
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/app_me" />
 </menu>

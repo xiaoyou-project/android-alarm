@@ -14,7 +14,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -34,5 +33,4 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     // 开源底部切换
     implementation 'nl.joery.animatedbottombar:library:1.0.8'
-
 }

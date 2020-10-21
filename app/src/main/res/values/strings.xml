@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">个人闹钟</string>
+    <string name="app_study">学习</string>
+    <string name="app_list">任务</string>
+    <string name="app_alarm">闹钟</string>
+    <string name="app_me">个人</string>
 </resources>
