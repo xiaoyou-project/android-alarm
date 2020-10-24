@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#299EE3</color>
+    <color name="colorPrimaryDark">#299EE3</color>
+    <color name="colorAccent">#299EE3</color>
+    <color name="title">#303133</color>
+    <color name="dec">#909399</color>
+    <color name="primary">#409EFF</color>
+    <color name="success">#67C23A</color>
+    <color name="waring">#E6A23C</color>
+    <color name="danger">#F56C6C</color>
+    <color name="info">#909399</color>
+    <color name="white">#ffffff</color>
+    <color name="little_grey">#F2F6FC</color>
 </resources>

@@ -9,6 +9,7 @@
     <FrameLayout
         android:id="@+id/appFragment"
         android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
         android:layout_height="match_parent">
     </FrameLayout>
     <nl.joery.animatedbottombar.AnimatedBottomBar
@@ -22,5 +23,5 @@
         app:abb_indicatorMargin="16dp"
         app:abb_indicatorHeight="4dp"
         app:abb_tabs="@menu/tabs"
-        app:abb_selectedIndex="1" />
+        app:abb_selectedIndex="0" />
 </RelativeLayout>
