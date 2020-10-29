@@ -13,6 +13,11 @@
     <string name="next_question">下一题</string>
     <string name="single_question">(单选题)</string>
 
+    <!-- 闹钟界面-->
+    <string name="alarm_title">闹钟标题</string>
+    <string name="alarm_dec">闹钟描述</string>
+    <string name="alarm_set_time">设置闹钟时间</string>
+
     <!-- 个人登录界面-->
     <string name="title_login_register">登录/注册</string>
     <string name="action_get_verify_code">获取验证码</string>

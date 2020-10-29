@@ -1,11 +1,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/tab_home"
-        android:icon="@drawable/ic_baseline_school_24"
+        android:icon="@drawable/ic_school"
         android:title="@string/app_study" />
     <item
         android:id="@+id/tab_alarm"
-        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:icon="@drawable/ic_list"
         android:title="@string/app_list" />
     <item
         android:id="@+id/tab_bread"
@@ -13,6 +13,6 @@
         android:title="@string/app_alarm" />
     <item
         android:id="@+id/tab_cart"
-        android:icon="@drawable/ic_baseline_person_24"
+        android:icon="@drawable/ic_person"
         android:title="@string/app_me" />
 </menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+        android:id="@+id/alarm_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/alarm_title"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelText="@string/alarm_title" />
+    <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+        android:id="@+id/alarm_dec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/alarm_dec"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelText="@string/alarm_dec" />
+    <TextView
+        android:id="@+id/time_show"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        />
+    <com.xuexiang.xui.widget.textview.supertextview.SuperButton
+        android:id="@+id/set_time"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:text="@string/alarm_set_time"
+        style="@style/SuperButton.Blue" />
+</LinearLayout>
