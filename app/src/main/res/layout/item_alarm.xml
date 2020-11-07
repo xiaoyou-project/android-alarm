@@ -15,13 +15,11 @@
         <TextView
             android:id="@+id/alarm_time"
             android:textSize="20sp"
-            android:text="06:20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/alarm_dec"
             android:layout_marginTop="5dp"
-            android:text="早上吃饭"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>

@@ -14,7 +14,7 @@ class AlarmHelper(context: Context) : SQLiteOpenHelper(context,"alarm.db",null,1
      * 当数据库第一次创建的时候执行的方法
      */
     override fun onCreate(db: SQLiteDatabase?) {
-        db?.execSQL("CREATE TABLE alarm (_id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, dec TEXT,time TIMESTAMP DEFAULT CURRENT_TIMESTAMP)")
+        db?.execSQL("CREATE TABLE alarm (_id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, dec TEXT,time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,status INTEGER)")
     }
 
     /**

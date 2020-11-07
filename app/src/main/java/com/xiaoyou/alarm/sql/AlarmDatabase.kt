@@ -25,6 +25,7 @@ class AlarmDatabase {
             value.put("title", alarm.title)
             value.put("dec",alarm.dec)
             value.put("time",alarm.time.time)
+            value.put("status",alarm.status)
             // 数据库插入数据
             db.insert(TABLE,null,value)
             db.close()
@@ -45,7 +46,7 @@ class AlarmDatabase {
                 while (cursor.moveToNext()){
                     // 这里我们向数据库里面添加一组数据
                     // Date类初始化可以传入unix时间然后转换为Date对象
-                    alarms.add(Alarm(cursor.getString(1), Date(cursor.getLong(3)),cursor.getString(2)))
+                    alarms.add(Alarm(cursor.getString(1), Date(cursor.getLong(3)),cursor.getString(2),cursor.getInt(4)))
                 }
             }
             cursor.close()
