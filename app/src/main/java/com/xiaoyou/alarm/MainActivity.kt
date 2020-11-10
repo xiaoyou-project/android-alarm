@@ -1,4 +1,6 @@
 package com.xiaoyou.alarm
+import android.app.AlarmManager
+import android.content.Intent
 import android.graphics.drawable.Animatable
 import kotlinx.android.synthetic.main.activity_main.*
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +10,9 @@ import com.xiaoyou.alarm.fragment.AlarmFragment
 import com.xiaoyou.alarm.fragment.MeFragment
 import com.xiaoyou.alarm.fragment.StudyFragment
 import com.xiaoyou.alarm.fragment.TaskFragment
+import com.xiaoyou.alarm.service.AlarmService
+import com.xiaoyou.alarm.sql.AlarmDatabase
+import com.xiaoyou.alarm.util.AlarmManageUtil
 import nl.joery.animatedbottombar.AnimatedBottomBar
 import java.util.*
 
@@ -19,6 +24,10 @@ class MainActivity : AppCompatActivity() ,AnimatedBottomBar.OnTabSelectListener{
         changeFragment(0)
         // 底部按钮监听事件
         bottom_bar.setOnTabSelectListener(this)
+        // 启动闹钟服务
+//        startService(Intent(this, AlarmService::class.java))
+        val alarms = AlarmDatabase.getAllAlarm(this)
+        AlarmManageUtil(this,alarms[0]).startAlarm()
     }
 
     /**

@@ -45,9 +45,6 @@ class AlarmFragment  : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        // 启动服务
-        val Intent = Intent(this,AlarmService.class);
-
         super.onViewCreated(view, savedInstanceState)
         // 初始化一个viewManager，使用的是线性布局，就是直接一列列的显示
         val viewManager = LinearLayoutManager(this.context)
