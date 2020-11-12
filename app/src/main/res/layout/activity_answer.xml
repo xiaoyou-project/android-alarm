@@ -72,10 +72,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/single_question" />
             <TextView
+                android:id="@+id/question_title"
                 android:layout_marginStart="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="你的年龄是多少？"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
         <!-- 选择区域 -->
         <LinearLayout
@@ -87,19 +87,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <RadioButton
-                    android:text="A.18岁以下"
+                    android:id="@+id/choose_a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <RadioButton
-                    android:text="B.18-25岁"
+                    android:id="@+id/choose_b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <RadioButton
-                    android:text="C.25-35岁"
+                    android:id="@+id/choose_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <RadioButton
-                    android:text="D.35岁以上"
+                    android:id="@+id/choose_d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </RadioGroup>
@@ -113,6 +113,7 @@
         android:layout_height="50dp">
         <!--上一题-->
         <LinearLayout
+            android:id="@+id/last_question"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -170,6 +171,7 @@
         </LinearLayout>
         <!--  下一题-->
         <LinearLayout
+            android:id="@+id/next_question"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:layout_width="0dp"

@@ -44,6 +44,9 @@ dependencies {
     implementation 'com.github.clans:fab:1.6.4'
     // 日历控件
     implementation 'com.haibin:calendarview:3.6.3'
+    //下拉刷新
+    implementation 'com.github.xuexiangjys.SmartRefreshLayout:refresh-header:1.1.5'
+    implementation 'com.github.xuexiangjys.SmartRefreshLayout:refresh-layout:1.1.5'
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'

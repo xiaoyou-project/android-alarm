@@ -1,11 +1,14 @@
 package com.xiaoyou.alarm.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.xiaoyou.alarm.R
+import com.xiaoyou.alarm.activity.AboutActivity
+import com.xiaoyou.alarm.activity.ForgetActivity
 import com.xiaoyou.alarm.util.XToastUtils
 import com.xuexiang.xui.utils.CountDownButtonHelper
 import kotlinx.android.synthetic.main.fragment_me.*
@@ -42,8 +45,8 @@ class MeFragment  : Fragment(),View.OnClickListener {
             )
             R.id.btn_login -> if (et_phone_number.validate() && et_verify_code.validate()) XToastUtils.success("登录成功")
             R.id.tv_other_login -> XToastUtils.info("其他登录方式")
-            R.id.tv_forget_password -> XToastUtils.info("忘记密码")
-            R.id.tv_user_protocol -> XToastUtils.info("用户协议")
+            R.id.tv_forget_password -> startActivity(Intent(v.context,ForgetActivity::class.java))
+            R.id.tv_user_protocol -> startActivity(Intent(v.context,AboutActivity::class.java))
             R.id.tv_privacy_protocol -> XToastUtils.info("隐私政策")
         }
     }

@@ -12,4 +12,5 @@
     <color name="info">#909399</color>
     <color name="white">#ffffff</color>
     <color name="little_grey">#F2F6FC</color>
+    <color name="red_end">#FFaa89</color>
 </resources>

@@ -5,6 +5,7 @@
     <string name="app_alarm">闹钟</string>
     <string name="app_me">个人</string>
     <string name="study_start">开始做题</string>
+    <string name="time_start">开始任务</string>
     <string name="back">返回</string>
     <string name="answer">答题模式</string>
     <string name="last_question">上一题</string>
@@ -20,6 +21,7 @@
 
     <!-- 个人登录界面-->
     <string name="title_login_register">登录/注册</string>
+    <string name="title_reset_password">重置密码</string>
     <string name="action_get_verify_code">获取验证码</string>
     <string name="title_login">登录</string>
     <string name="title_login_by_verify_code">验证码登录</string>
@@ -28,6 +30,7 @@
     <string name="lab_login_by_verify_code">验证码登录</string>
     <string name="lab_login_by_password">密码登录</string>
     <string name="tip_please_input_phone_number">请输入手机号码</string>
+    <string name="tip_please_input_new_password">请输入新密码</string>
     <string name="title_phone_number">手机号码</string>
     <string name="title_password">密码</string>
     <string name="title_old_password">旧密码</string>
