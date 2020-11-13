@@ -20,18 +20,28 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    testOptions {
+        // 设置虚拟环境
+        unitTests.includeAndroidResources = true
+    }
 }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.cardview:cardview:1.0.0'
+    // 单元测试
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // 单元测试核心（用于获取context对象）
+    testImplementation 'androidx.test:core:1.3.0'
+    androidTestImplementation 'androidx.test:rules:1.3.0'
+//    testImplementation 'org.mockito:mockito-core:1.10.19'
+//    testImplementation "org.robolectric:robolectric:4.2.1"
+    testImplementation  'androidx.test.ext:junit:1.1.2'
+    testImplementation  'androidx.test.espresso:espresso-core:3.3.0'
     // 开源底部切换
     implementation 'nl.joery.animatedbottombar:library:1.0.8'
     // web浏览器
@@ -48,8 +58,8 @@ dependencies {
     implementation 'com.github.xuexiangjys.SmartRefreshLayout:refresh-header:1.1.5'
     implementation 'com.github.xuexiangjys.SmartRefreshLayout:refresh-layout:1.1.5'
 
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.google.android.material:material:1.2.1'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
 }
