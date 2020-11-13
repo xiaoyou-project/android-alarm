@@ -15,4 +15,8 @@
         android:id="@+id/tab_cart"
         android:icon="@drawable/ic_person"
         android:title="@string/app_me" />
+    <item
+        android:id="@+id/tab_other"
+        android:icon="@drawable/ic_apps"
+        android:title="@string/app_others" />
 </menu>

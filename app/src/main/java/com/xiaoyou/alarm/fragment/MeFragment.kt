@@ -1,6 +1,7 @@
 package com.xiaoyou.alarm.fragment
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -23,7 +24,7 @@ class MeFragment  : Fragment(),View.OnClickListener {
     }
 
     /**
-     * 页面处理事件
+     * 页面处理事件，这里是自己重写一个按钮的监听事件，然后覆盖监听
      */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -47,7 +48,9 @@ class MeFragment  : Fragment(),View.OnClickListener {
             R.id.tv_other_login -> XToastUtils.info("其他登录方式")
             R.id.tv_forget_password -> startActivity(Intent(v.context,ForgetActivity::class.java))
             R.id.tv_user_protocol -> startActivity(Intent(v.context,AboutActivity::class.java))
-            R.id.tv_privacy_protocol -> XToastUtils.info("隐私政策")
+            R.id.tv_privacy_protocol ->
+                // 这里我们使用隐式意图调用浏览器
+                startActivity(Intent().setAction("android.intent.action.VIEW").setData(Uri.parse("http://baidu.com")))
         }
     }
 

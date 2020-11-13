@@ -107,6 +107,13 @@ class AlarmFragment  : Fragment() {
             }
 
         }
+
+        // 删除所有闹钟的点击事件
+        fab_deletes.setOnClickListener{
+            AlarmDatabase.deleteAllAlarm(this.context!!)
+            // 更新数据库
+            alarmAdapt.updateList(getAllAlarm(this.context!!))
+        }
     }
 
     // 获取所有的闹钟信息

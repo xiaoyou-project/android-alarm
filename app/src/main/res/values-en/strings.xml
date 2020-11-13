@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">个人闹钟</string>
-    <string name="app_study">学习</string>
-    <string name="app_list">任务</string>
-    <string name="app_alarm">闹钟</string>
-    <string name="app_me">个人</string>
-    <string name="study_start">开始做题</string>
+    <string name="app_name">alarm</string>
+    <string name="app_study">study</string>
+    <string name="app_list">task</string>
+    <string name="app_alarm">alarm</string>
+    <string name="app_me">person</string>
+    <string name="study_start">start question</string>
     <string name="time_start">开始任务</string>
     <string name="back">返回</string>
     <string name="answer">答题模式</string>
@@ -47,6 +48,6 @@
     <string name="lab_register_account">点击注册即表示同意</string>
     <string name="lab_service_protocol"><![CDATA[<用户协议>]]></string>
     <string name="url_add_qq_group"><![CDATA[https://qm.qq.com/cgi-bin/qm/qr?k=0lUqsbfHTNDbS2KK4nTPwPq07tOqAk6J&authKey=4PzQ2cQYIr28Qyg%2FkTk%2BmI7xlcq8B0IZKZGc1H3XloRrCDBO8az97DIsBHnQW0Ya]]></string>
-    <string name="app_others">其他功能</string>
+    <string name="app_others">others</string>
 
 </resources>

@@ -4,9 +4,11 @@
     package="com.xiaoyou.alarm">
     <!-- 联网权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 弹窗 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 弹窗 -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
 
     <application
         android:name=".CustomApplication"
@@ -15,7 +17,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.StartTaskActivity"></activity>
+        <activity android:name=".activity.DataSaveActivity"></activity>
+        <!-- 这里可以设置安卓的启动模式 launchMode -->
+        <activity
+            android:name=".activity.StartTaskActivity"
+            android:launchMode="standard" />
         <activity android:name=".activity.TaskDetailActivity" />
         <activity android:name=".activity.AboutActivity" />
         <activity android:name=".activity.ForgetActivity" />

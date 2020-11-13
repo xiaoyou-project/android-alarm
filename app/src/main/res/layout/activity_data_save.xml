@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DataSaveActivity">
+
+    <com.xuexiang.xui.widget.textview.supertextview.SuperButton
+        android:id="@+id/save_data_in_storage"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:text="存储文件到内部存储"
+        style="@style/SuperButton.Blue" />
+    <com.xuexiang.xui.widget.textview.supertextview.SuperButton
+        android:id="@+id/read_data_in_storage"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:text="读取内部存储数据"
+        style="@style/SuperButton.Blue" />
+
+</LinearLayout>

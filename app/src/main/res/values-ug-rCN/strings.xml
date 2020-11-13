@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">个人闹钟</string>
     <string name="app_study">学习</string>
@@ -48,5 +49,4 @@
     <string name="lab_service_protocol"><![CDATA[<用户协议>]]></string>
     <string name="url_add_qq_group"><![CDATA[https://qm.qq.com/cgi-bin/qm/qr?k=0lUqsbfHTNDbS2KK4nTPwPq07tOqAk6J&authKey=4PzQ2cQYIr28Qyg%2FkTk%2BmI7xlcq8B0IZKZGc1H3XloRrCDBO8az97DIsBHnQW0Ya]]></string>
     <string name="app_others">其他功能</string>
-
 </resources>

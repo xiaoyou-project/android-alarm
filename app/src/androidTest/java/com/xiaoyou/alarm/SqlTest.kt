@@ -8,7 +8,6 @@ import com.xiaoyou.alarm.sql.AlarmDatabase
 import org.junit.Test
 import org.junit.runner.RunWith
 
-import org.junit.Assert.*
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -16,7 +15,9 @@ import org.junit.Assert.*
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 @RunWith(AndroidJUnit4ClassRunner::class)
-class ExampleInstrumentedTest {
+class SqlTest {
+
+    // 测试数据库连接
     @Test
     fun getAllResult(){
         // 获取context对象

@@ -93,5 +93,14 @@ class AlarmDatabase {
             db.close()
             return number
         }
+
+        // 删除所有的闹钟
+        fun deleteAllAlarm(context: Context):Int{
+            // 获取writeable对象
+            val db = AlarmHelper(context).writableDatabase
+            val num = db.delete(TABLE, null, null)
+            db.close()
+            return num
+        }
     }
 }
